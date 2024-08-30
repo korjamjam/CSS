@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(34, 33, 33);
+}
+
+ul, li, ol{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header#leftmenu img{
+    width: 150px;
+}
+
+.header#leftmenu{
+    width: 150px;
+    height: 40px;
+    justify-content: flex-start;
+}
+
+.header#logo{
+    width: 150px;
+    height: 40px;
+    justify-content: flex-start;
+}
+
+.header#search{
+    width: 350px;
+    height: 30px;
+    justify-content: center;
+    border: 1px solid black;
+
+}
+.header#center{
+    justify-content: center;
+}
+
+.header#mic{
+    width: 100px;
+    height: 40px;
+}
+.search-bar{
+    flex-grow: 1;
+    margin: 0 20px;
+    padding: 8px;
+    border: 1px black solid;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.search-img{
+    outline: none;
+    border: none;
+    width: 30%;
+    height: 100%;
+    background: url(icons/search.svg) no-repeat center/contain;
+    background-size: 20px 20px;
+}
+
+.search-mic-img{
+    outline: none;
+        border: none;
+        width: 30%;
+        height: 100%;
+        background: url(icons/voice-search-icon.svg) no-repeat center/contain;
+        background-size: 40px 20px;
+}
+
+.header#right{
+    float: right;
+}
+
+.header#user{
+    width: 100px;
+    height: 40px;
+
+}
+.header#upload{
+    width: 100px;
+    height: 40px;
+
+}
+.header#notifications{
+    width: 100px;
+    height: 40px;
+
+}
+
+.sidebar {
+    width: 80px;
+    background-color: #202020;
+    padding: 20px;
+    height: 100vh;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.video-item {
+    background-color: #282828;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.video-item img {
+    width: 100%;
+    height: auto;
+}
+
+.video-details {
+    padding: 10px;
+}
+
+.video-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.video-channel,
+.video-views {
+    font-size: 14px;
+    color: #888;
+}
